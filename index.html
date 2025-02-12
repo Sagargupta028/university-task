@@ -271,11 +271,11 @@
 
     <!-- Top Countries -->
     <section class="py-20">
-      <div class="container">
+      <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-12">
           Top Countries for MBBS Abroad
         </h2>
-        <div id="countries-container" class="grid"></div>
+        <div id="countries-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 cursor-pointer"></div>
       </div>
       <div class="flex justify-center mt-6">
         <button
@@ -306,45 +306,9 @@
       </div>
     </section>
 
-    <!-- Lead Form -->
-    <!-- <section id="lead-form" class="bg-white py-12 px-4">
-        <h2 class="text-3xl font-bold text-center">Apply Now</h2>
-        <form id="contactForm" class="max-w-lg mx-auto mt-6 bg-gray-100 p-6 rounded-lg shadow">
-            <label class="block mb-2">Name</label>
-            <input type="text" id="name" class="w-full p-3 mb-4 border rounded" placeholder="Your Name" required>
 
-            <label class="block mb-2">Email</label>
-            <input type="email" id="email" class="w-full p-3 mb-4 border rounded" placeholder="Your Email" required>
 
-            <label class="block mb-2">Phone</label>
-            <input type="tel" id="phone" class="w-full p-3 mb-4 border rounded" placeholder="Your Phone Number" required>
-
-            <label class="block mb-2">Preferred Country</label>
-            <select id="country" class="w-full p-3 mb-4 border rounded">
-                <option value="">Select a Country</option>
-                <option value="Russia">Russia</option>
-                <option value="Uzbekistan">Uzbekistan</option>
-                <option value="Kazakhstan">Kazakhstan</option>
-                <option value="Philippines">Philippines</option>
-                <option value="Georgia">Georgia</option>
-                <option value="Kyrgyzstan">Kyrgyzstan</option>
-                <option value="Egypt">Egypt</option>
-            </select>
-            <div>
-                <label class="block mb-2">Message</label>
-                <textarea 
-                  placeholder="Your Message (Optional)" 
-                  name="message" 
-                  class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                ></textarea>
-              </div>
-              
-
-            <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded">Submit</button>
-        </form>
-    </section> -->
-
-    <div
+<div
   id="popup"
   class="fixed inset-0 bg-black bg-opacity-20 flex items-center justify-center transition-opacity duration-300 z-50 px-4 md:px-10"
 >
@@ -368,6 +332,12 @@
       >
         ✖
       </button>
+
+      <!-- Heading -->
+      <h2 class="text-2xl font-bold text-blue-900 text-center mb-4">
+        Want to study Abroad?
+      </h2>
+
       <form id="contactForm" class="space-y-2">
         <label class="block">Name</label>
         <input
@@ -428,6 +398,7 @@
     </div>
   </div>
 </div>
+
 
 
     <script>
